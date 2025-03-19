@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreasureHub", "TreasureHub\TreasureHub.csproj", "{3A589794-9E45-4EE1-8157-48BAC293E849}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A589794-9E45-4EE1-8157-48BAC293E849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A589794-9E45-4EE1-8157-48BAC293E849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A589794-9E45-4EE1-8157-48BAC293E849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A589794-9E45-4EE1-8157-48BAC293E849}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
