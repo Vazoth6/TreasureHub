@@ -6,25 +6,20 @@ namespace TreasureHub.Models;
 public class Transacao
 {
     [Key]
-    public long TransacaoID { get; set; }
+    public int TransacaoId { get; set; }
 
-    [ForeignKey("Listagem")]
-    public long ListagemID { get; set; }
+    public int CompradorId { get; set; }
+    public Utilizador Comprador { get; set; }
 
-    public ListagemItem Listagem { get; set; }
+    public int VendedorId { get; set; }
+    public Utilizador Vendedor { get; set; }
 
-    [ForeignKey("Utilizador")]
-    public long UtilizadorID { get; set; }
+    public int ItemId { get; set; }
+    public Item Item { get; set; }
 
-    public Utilizador Utilizador { get; set; }
-
-    public string Listagem_nome { get; set; }
-
-    public string Nome_utilizador { get; set; }
-
-    public DateTime Data_Transacao { get; set; }
-
+    public DateTime Data { get; set; }
+    
     public decimal Preco { get; set; }
-
-    public bool isTroca { get; set; }
+    
+    public string Estado { get; set; }
 }

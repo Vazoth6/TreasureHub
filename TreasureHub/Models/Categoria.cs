@@ -4,10 +4,8 @@ namespace TreasureHub.Models;
 
 public class Categoria
 {
-    [Key]
-    public long CategoriaId { get; set; }
-    
+    public int Id { get; set; }
     public string Nome { get; set; }
-    
-    public ICollection<Item> Itens { get; set; }
+
+    public ICollection<Item> Itens { get; set; } = new ICollection<Item>();
 }

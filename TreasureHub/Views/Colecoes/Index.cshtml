@@ -9,6 +9,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -22,28 +23,25 @@
                 @Html.DisplayNameFor(model => model.Descricao)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Imagem)
+                @Html.DisplayNameFor(model => model.ItemId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CategoriaID)
+                @Html.DisplayNameFor(model => model.ItemId)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Categoria)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DonoId)
+                @Html.DisplayNameFor(model => model.ItemId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Dono)
+                @Html.DisplayNameFor(model => model.ItemId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DataLancamento)
+                @Html.DisplayNameFor(model => model.ItemId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Manufacturador)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.isVenda)
+                @Html.DisplayNameFor(model => model.ItemId)
             </th>
         </tr>
     </thead>
@@ -51,30 +49,30 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Titulo)
+                @Html.DisplayFor(modelItem => item.ItemId)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>
             <td>
-                <img style="max-width: 400px;" src="@item.Ficheiro" />
+                <img style="max-width: 400px;" src="@item.ItemId" />
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DataFotografia)
+                @Html.DisplayFor(modelItem => item.ItemId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Preco)
+                @Html.DisplayFor(modelItem => item.ItemId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Dono.Nome)
+                @Html.DisplayFor(modelItem => item.ItemId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Categoria.Categoria)
+                @Html.DisplayFor(modelItem => item.Categoria.Nome)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.ItemId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ItemId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ItemId">Delete</a>
             </td>
         </tr>
 }

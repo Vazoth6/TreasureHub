@@ -11,10 +11,10 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Titulo)
+            @Html.DisplayNameFor(model => model.Descricao)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Titulo)
+            @Html.DisplayFor(model => model.Descricao)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Descricao)
@@ -23,40 +23,40 @@
             @Html.DisplayFor(model => model.Descricao)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Ficheiro)
+            @Html.DisplayNameFor(model => model.Descricao)
         </dt>
         <dd class="col-sm-10">
-            <img style="max-width: 400px;" src="/@Model.Ficheiro" />
+            <img style="max-width: 400px;" src="/@Model.Descricao" />
             
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DataFotografia)
+            @Html.DisplayNameFor(model => model.Descricao)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DataFotografia)
+            @Html.DisplayFor(model => model.Descricao)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Preco)
+            @Html.DisplayNameFor(model => model.Descricao)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Preco)
+            @Html.DisplayFor(model => model.Descricao)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Dono)
+            @Html.DisplayNameFor(model => model.Descricao)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Dono.Nome)
-            <a asp-action="Details" asp-controller="Utilizadores" asp-route-id="@Model.DonoFk">Ver Dono</a>
+            @Html.DisplayFor(model => model.Descricao)
+            <a asp-action="Details" asp-controller="Utilizadores" asp-route-id="@Model.Descricao">Ver Dono</a>
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Categoria)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Categoria.Categoria)
+            @Html.DisplayFor(model => model.Descricao)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Edit" asp-route-id="@Model?.Descricao">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

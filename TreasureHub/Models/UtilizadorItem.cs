@@ -5,20 +5,12 @@ namespace TreasureHub.Models;
 
 public class UtilizadorItem
 {
-    [Key]
-    public long UtilizadorItemID { get; set; }
-
-    [ForeignKey("Utilizador")]
-    public long UtilizadorID { get; set; }
-
+    public int UtilizadorId { get; set; }
     public Utilizador Utilizador { get; set; }
 
-    [ForeignKey("Item")]
-    public long ItemID { get; set; }
-
+    public int ItemId { get; set; }
     public Item Item { get; set; }
 
-    public string NomeItem { get; set; }
-
-    public string TipoPosse { get; set; }
+    public DateTime DataAquisicao { get; set; }
+    public string Metodo { get; set; }
 }

@@ -1,25 +1,25 @@
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.InteropServices.JavaScript;
+using System.Runtime.InteropServices.JavaScript;
 
 namespace TreasureHub.Models;
 
 public class Utilizador
 {
     [Key]
-    public long utilizadorId { get; set; }
+    public long UtilizadorId { get; set; }
     
     [Required]
-    public string nomeUtilizador { get; set; }
+    public string NomeUtilizador { get; set; }
     
     [Required]
-    public string email { get; set; }
+    public string Email { get; set; }
     
-    public string cargo { get; set; }
+    public string Cargo { get; set; }
     
-    public string password { get; set; }
+    [Required]
+    public string Password { get; set; }
     
-    public DateTime dataRegisto { get; set; }
+    public DateTime DataRegisto { get; set; }
     
-    public ICollection<Item> Itens { get; set; }
-    public ICollection<ListagemItem> Listagens { get; set; }
-    public ICollection<Transacao> Transacoes { get; set; }
 }
