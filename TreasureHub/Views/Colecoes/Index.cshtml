@@ -14,34 +14,19 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ItemId)
+                @Html.DisplayNameFor(model => model.Nome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Nome)
+                @Html.DisplayNameFor(model => model.Imagem)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Descricao)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ItemId)
+                @Html.DisplayNameFor(model => model.Estado)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ItemId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Categoria)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ItemId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ItemId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ItemId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ItemId)
+                @Html.DisplayNameFor(model => model.Preco)
             </th>
         </tr>
     </thead>
@@ -49,25 +34,19 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ItemId)
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                <img style="max-width: 400px;" src="@item.Imagem" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>
             <td>
-                <img style="max-width: 400px;" src="@item.ItemId" />
+                @Html.DisplayFor(modelItem => item.Estado)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ItemId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ItemId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ItemId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Categoria.Nome)
+                @Html.DisplayFor(modelItem => item.Preco)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ItemId">Edit</a> |

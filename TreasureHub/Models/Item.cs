@@ -8,6 +8,9 @@ public class Item
     [Key]
     public int ItemId { get; set; }
     public string Nome { get; set; }
+    
+    // Url da imagem
+    public string Imagem { get; set; }
     public string Descricao { get; set; }
 
     public int CategoriaId { get; set; } 

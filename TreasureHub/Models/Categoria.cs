@@ -7,5 +7,5 @@ public class Categoria
     public int Id { get; set; }
     public string Nome { get; set; }
 
-    public ICollection<Item> Itens { get; set; } = new ICollection<Item>();
+    public ICollection<Item> Itens { get; set; } = new List<Item>();
 }
